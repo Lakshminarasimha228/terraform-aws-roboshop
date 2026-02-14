@@ -193,7 +193,7 @@ resource "aws_lb_listener_rule" "main" {
 
   condition {
     host_header {
-      values = [local.rule_health_url]
+      values = [local.rule_header_url]
     }
   }
 }
